@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: System.Net.Http
+    versions:
+    - 4.3.2
+  - dependency-name: Microsoft.VisualStudio.Threading
+    versions:
+    - 16.8.55
+    - 16.9.54
+  - dependency-name: Microsoft.NETCore.Platforms
+    versions:
+    - 5.0.0
+    - 5.0.1
+  - dependency-name: Microsoft.VisualStudio.OLE.Interop
+    versions:
+    - 16.8.30705.32
+  - dependency-name: Microsoft.VisualStudio.Imaging
+    versions:
+    - 16.7.30329.63
+  - dependency-name: Microsoft.VisualStudio.Utilities
+    versions:
+    - 16.7.30329.38
